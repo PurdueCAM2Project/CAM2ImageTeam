@@ -1,6 +1,6 @@
 How to install and use gdrive
 This assumes you're using ubuntu
-If you want to follow an example use the folder: "CAM2/Data/images/unlabeled (upload here)"
+If you want to follow an example use the folder: "CAM2/Data/images/01 unlabeled data"
 For documentation, look at https://github.com/prasmussen/gdrive or use ./gdrive help
 For useful documentation about how to write queries for search, 
 see https://developers.google.com/drive/v3/web/search-parameters#fn1  
@@ -21,7 +21,7 @@ Finding the folder you want to upload to
 - Note the created date, in my case february 7, 2017
 - Open terminal
 - Run command "./gdrive list -q "name contains '{upload folder}' and trashed = False""
-- Replace {upload folder} with appropriate name.  In my case, "unlabeled (upload here)"
+- Replace {upload folder} with appropriate name.  In my case, "01 unlabeled data"
 - Confirm the result it gives you has the same created date
 - Write down the Id
 

@@ -36,3 +36,14 @@ If you are stuck on any of the material, please email me at gauenk@purdue.edu wi
 - CAM2
     1. mAP
     2. 10 detected images
+
+## FRCNN Caffe Install Note:
+
+After cloning, we need to update the actual *caffe* to support the current CUDNN. See issue \[[237](https://github.com/rbgirshick/py-faster-rcnn/issues/237)\]
+
+```
+cd caffe-fast-rcnn  
+git remote add caffe https://github.com/BVLC/caffe.git  
+git fetch caffe  
+git merge -X theirs caffe/master
+```

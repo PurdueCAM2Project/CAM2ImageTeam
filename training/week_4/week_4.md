@@ -47,3 +47,15 @@ git remote add caffe https://github.com/BVLC/caffe.git
 git fetch caffe  
 git merge -X theirs caffe/master
 ```
+
+Now we need to make sure it works with Python2.7. See issue \[[249](https://github.com/rbgirshick/py-faster-rcnn/issues/249)\]. Edit the "python_layer.hpp" file:
+
+```
+self_.attr("phase") = static_cast(this->phase_);
+```
+
+goes to
+
+```
+//self_.attr("phase") = static_cast(this->phase_);
+```

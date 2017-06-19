@@ -34,11 +34,14 @@ Once the job has completed, you will see several new files in the
 directory from which you submitted the job.  They will be 
 caffe_alexnet_singlenode_dummy.sh.e#, 
 caffe_alexnet_singlenode_dummy.sh.o# where # is the 
-job number, and caffe_singlenode.txt.  If the job finished 
-successfully, caffe_singlenode.txt will be a long file with the
-output of your program.  
+job number, and caffe_singlenode.txt.  The .e file contains any 
+output from stderr.  The .o file contains any output from 
+stdout.  If the job finished successfully, caffe_singlenode.txt 
+will be a long file with the output of your program.  
 
-
+### Single Node Torch Example
+To begin, create a script named 
+"torch_alexnet_singlenode_dummy.sh" with the following contents.
 
 ```
 #!/bin/bash
@@ -49,6 +52,16 @@ export OMP_NUM_THREADS=68;
 export KMP_AFFINITY=granularity=fine,compact,1,0;
 cd /export/software/torch/Optimized-Torch-benchmark/numactl -p 1 th benchmark_mkldnn.lua 2>&1 | tee ~/torch_singlenode.txt
 ```
+Once you have created this file, make it executable and submit 
+it to the cluster using the following commands. 
+```
+chmod +x ./torch_alexnet_singlenode_dummy.sh
+qsub ./torch_alexnet_singlenode_dummy.sh
+``` 
+Like with the caffe example, you will have several new files 
+in the directory from which you submitted the job. 
+
+
 
 ```
 #!/bin/bash

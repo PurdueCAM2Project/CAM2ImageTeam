@@ -1,10 +1,19 @@
 # Intel Cluster vLab guide
-The Intel vLab cluster is a vital tool for our research project.  The guide they publish is helpful, but can be confusing at times.  This document is intended to help users learn how to use the cluster.  It can be used as a supplement to the guide they provide, or as a standalone guide that will teach you everything you need to know.  
+The Intel vLab cluster is a vital tool for our research project.  
+The guide they publish is helpful, but can be confusing at times. 
+This document is intended to help users learn how to use the 
+cluster.  It can be used as a supplement to the guide they 
+provide, or as a standalone guide that will teach you everything 
+you need to know.  
 
 ## Running simple example jobs
-The following examples are meant to be a 
-### Caffe
-To begin, create a 
+The following examples are to provided to illustrate running a 
+job in the cluster using the PBS scheduler.  They are simple 
+and not meant to be a complete guide to the PBS scheduler.  
+
+### Single Node Caffe Example
+To begin, create a script named 
+"caffe_alexnet_singlenode_dummy.sh" with the following contents.  
 ```
 #!/bin/bash
 #PBS -l select=1:ncpus=272 -lplace=excl
@@ -14,6 +23,22 @@ export KMP_AFFINITY=granularity=fine,compact,1,0;
 numactl -p 1 /export/software/caffe/build/tools/caffe time -engine "MKL2017" -model
 /export/software/caffe/models/bvlc_alexnet/train_val_dummy.prototxt 2>&1 | tee ~/caffe_singlenode.txt
 ```
+Once you have created this file, make it executable and submit 
+it to the cluster using the following commands.
+
+```
+chmod +x ./caffe_alexnet_singlenode_dummy.sh
+qsub ./caffe_alexnet_singlenode_dummy.sh
+```
+Once the job has completed, you will see several new files in the
+directory from which you submitted the job.  They will be 
+caffe_alexnet_singlenode_dummy.sh.e#, 
+caffe_alexnet_singlenode_dummy.sh.o# where # is the 
+job number, and caffe_singlenode.txt.  If the job finished 
+successfully, caffe_singlenode.txt will be a long file with the
+output of your program.  
+
+
 
 ```
 #!/bin/bash

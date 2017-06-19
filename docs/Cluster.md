@@ -83,6 +83,6 @@ As with the previous two examples, there should be several new
 files in the directory from which you submitted the job.  
 
 
-## Helpful Websites for Reference
-http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf
-http://gridscheduler.sourceforge.net/htmlman/manuals.html
+## Helpful Websites for More Advanced Topics
+- [PBS scheduler guide](http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf)
+- [SGE reference manual](http://gridscheduler.sourceforge.net/htmlman/manuals.html)

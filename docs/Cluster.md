@@ -61,7 +61,9 @@ qsub ./torch_alexnet_singlenode_dummy.sh
 Like with the caffe example, you will have several new files 
 in the directory from which you submitted the job. 
 
-
+### Single Node MXNet Example
+To begin, create a script named 
+"mxnet_alexnet_singlenode_dummy.sh" with the following contents.
 
 ```
 #!/bin/bash
@@ -71,13 +73,16 @@ export OMP_NUM_THREADS=68;
 export KMP_AFFINITY=granularity=fine,compact,1,0;
 cd /export/software/mxnet/example/image-classification numactl -p 1 python benchmark_score.py 2>&1 | tee ~/mxnet_singlenode.txt
 ```
+Again, make it executable and submit it to the cluster using 
+the following commands.
+```
+chmod +x ./mxnet_alexnet_singlenode_dummy.sh
+qsub ./mxnet_alexnet_singlenode_dummy.sh
+``` 
+As with the previous two examples, there should be several new 
+files in the directory from which you submitted the job.  
 
 
-
-
-
-
-
-
+## Helpful Websites for Reference
 http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf
 http://gridscheduler.sourceforge.net/htmlman/manuals.html

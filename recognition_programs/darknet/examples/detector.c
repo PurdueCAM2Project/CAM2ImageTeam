@@ -748,6 +748,11 @@ void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cf
     float nms = .4;
     int j;
 
+    clock_t starttime;
+    clock_t endtime;
+    int numimgsprocessed = 0;
+    float avgfps = 0;
+
     while (1)
     {
         input = fgets(buff, sizeof(buff), infile);
@@ -767,7 +772,15 @@ void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cf
         }
         
         float* X = sized.data;
+        
+        starttime = clock();
         network_predict(net, X);
+        endtime = clock();
+
+        numimgsprocessed++;
+        avgfps = ((numimgsprocessed-1)*avgfps + sec(endtime-starttime))/numimgsprocessed;
+
+        printf("\nRunning Average FPS: %f\n", avgfps);
 
         get_region_boxes(l, im.w, im.h, net.w, net.h, thresh, probs, boxes, 1, 0, .5, 1);
         

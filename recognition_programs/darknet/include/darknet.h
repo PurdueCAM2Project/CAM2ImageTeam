@@ -723,7 +723,12 @@ int *read_intlist(char *s, int *n, int d);
 size_t rand_size_t();
 float rand_normal();
 
-void batch_detector(float thresh, char *stream_path, char *ostream_path, char *datacfg, char *cfgfile, char *weightfile);
-void print_detector_csv(FILE *fp, char *id, char **names, box *boxes, float **probs, int total, int classes, int w, int h, float thresh);
+
+
+/**********************************************************
+ *** CAM2 IMAGE TEAM AUGMENTATIONS FOR BATCH PROCESSING ***
+ **********************************************************/
+void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cfgfile, char* weightfile, float thresh);
+void print_detector_detections_with_labels(FILE* resultsfile, char* id, char** labels, box* boxes, float** probs, float thresh, int total, int classes, int w, int h);
 
 #endif

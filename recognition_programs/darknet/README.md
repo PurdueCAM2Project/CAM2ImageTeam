@@ -6,6 +6,7 @@ For more information see the [Darknet project website](http://pjreddie.com/darkn
 
 For questions or issues about Darknet, please use the [Google Group](https://groups.google.com/forum/#!forum/darknet).
 
+Remember to ```make``` Darknet befor running.
 
 CAM2 Image Team Augmentations
 -------

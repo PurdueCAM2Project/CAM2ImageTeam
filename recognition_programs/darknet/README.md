@@ -18,7 +18,7 @@ The input file is a text file that lists all the images in the batch (each image
 
 An example of this command is:
 ```
-./darknet cfg/yolo.cfg yolo.weights -in images.txt -out imagesresult.txt -thresh 0.25
+./darknet batch cfg/yolo.cfg yolo.weights -in images.txt -out imagesresult.txt -thresh 0.25
 ```
 > **NOTE:** "yolo.weights" can be obtained via ```wget https://pjreddie.com/media/files/yolo.weights```
 

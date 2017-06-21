@@ -713,6 +713,10 @@ void run_detector(int argc, char **argv)
 /**********************************************************
  *** CAM2 IMAGE TEAM AUGMENTATIONS FOR BATCH PROCESSING ***
  **********************************************************/
+
+/*!
+ * \brief Runs the YOLO detector on a batch of image files listed in an input file and also prints FPS info
+ */
 void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cfgfile, char* weightfile, float thresh)
 {
     list* options = read_data_cfg(datacfg);
@@ -801,6 +805,15 @@ void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cf
     fclose(outfile);
 }
 
+/*!
+ * \brief Given an open output file stream, writes information about the labels and bounding boxes to the file
+ * \param resultsfile The output file stream
+ * \param id The image ID
+ * \param labels List of object labels
+ * \return void
+ *
+ * Modified from print_detector_detections(), this function accepts the threshold and does more customized printing
+ */
 void print_detector_detections_with_labels(FILE* resultsfile, char* id, char** labels, box* boxes, float** probs, float thresh, int total, int classes, int w, int h)
 {
     int i, j;

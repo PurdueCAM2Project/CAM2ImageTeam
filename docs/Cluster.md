@@ -137,7 +137,24 @@ qsub ./mxnet_alexnet_singlenode_dummy.sh
 As with the previous two examples, there should be several new 
 files in the directory from which you submitted the job.  
 
+------
+
+## Installing local packages
+If you need a Python dependency that isn't already present on the cluster, you can install the dependency to your user (no ```sudo``` needed) and it'll work when you submit to the cluster.
+
+The key is ```--user```
+
+For example:
+```
+pip2 install --user [PACKAGE]
+````
+or
+```
+easy_install --user [PACKAGE]
+````
+------
 
 ## Helpful Websites for Reference
-http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf
-http://gridscheduler.sourceforge.net/htmlman/manuals.html
+### PBS Scheduler
+* http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf
+* http://gridscheduler.sourceforge.net/htmlman/manuals.html

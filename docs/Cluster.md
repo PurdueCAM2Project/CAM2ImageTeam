@@ -1,10 +1,65 @@
 # Intel Cluster vLab guide
-The Intel vLab cluster is a vital tool for our research project.  
+The Intel vLab Knights Landing cluster is a vital tool for our research project.
 The guide they publish is helpful, but can be confusing at times. 
 This document is intended to help users learn how to use the 
 cluster.  It can be used as a supplement to the guide they 
 provide, or as a standalone guide that will teach you everything 
-you need to know.  
+you need to know.
+
+-------
+
+## Using the PBS Scheduler
+Most things you do on the cluster: Vimming, test-compiling, etc. is done from your access node.
+
+However, when you're ready to run your program with the cluster's full power, you will need to submit a job via the PBS Scheduler.
+
+### 1. Create a Bash script
+Any bash script submitted to the cluster should be written  with these three lines of code at the top of the file:
+```
+#!/bin/bash
+#PBS -l select=1:ncpus=272 -lplace=excl
+
+cd [ABSOLUTE PATH TO DIRECTORY OF EXECUTABLE]
+```
+
+The cluster has 256 nodes.  You may choose to run your job on more nodes by changing the ```select``` value.
+
+> **IMPORTANT:** The ```cd``` is *very, very important.*  Otherwise, the job will fail to execute because none of your relatively-pathed dependencies can be located.
+
+A job submit bash script might look like:
+```
+#!/bin/bash
+#PBS -l select=32:ncpus=272 -lplace=excl
+
+cd ~/somedir/wheremypythonscript/is/
+python dostuff.py
+```
+
+### 2. Submit the job
+Run
+```
+qsub [YOUR BASH SCRIPT].sh
+```
+The PBS Scheduler will return a string that looks something like this:
+```#####.iam-pbs1```.  That is your Job ID.
+
+### 3. Monitor the job
+To call up basic information about all the jobs you've submitted that are running on the cluster, run
+```
+qstat -u [USERNAME]
+```
+
+To call up detailed information about a specific job, run
+```
+qstat -f [JOB ID]
+```
+
+### 4. Review the job's output
+When the job finishes, anything it wrote to ```stderr``` will be dumped into a file called "[YOUR BASH SCRIPT].sh.e#####".  Anything it wrote to ```stdout``` will be dumped into "[YOUR BASH SCRIPT].sh.o#####"
+> **Tip:** As you can imagine, your working directory can quickly become cluttered with those dump files.  Add an aliased command that you can periodically run inside the directory to clean it all up:
+```rm -f ./*.sh.*```
+
+-------
 
 ## Running simple example jobs
 The following examples are to provided to illustrate running a 
@@ -82,7 +137,24 @@ qsub ./mxnet_alexnet_singlenode_dummy.sh
 As with the previous two examples, there should be several new 
 files in the directory from which you submitted the job.  
 
+------
+
+## Installing local packages
+If you need a Python dependency that isn't already present on the cluster, you can install the dependency to your user (no ```sudo``` needed) and it'll work when you submit to the cluster.
+
+The key is ```--user```
+
+For example:
+```
+pip2 install --user [PACKAGE]
+````
+or
+```
+easy_install --user [PACKAGE]
+````
+------
 
 ## Helpful Websites for Reference
-http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf
-http://gridscheduler.sourceforge.net/htmlman/manuals.html
+### PBS Scheduler
+* http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf
+* http://gridscheduler.sourceforge.net/htmlman/manuals.html

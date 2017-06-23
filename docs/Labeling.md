@@ -1,6 +1,5 @@
-PASCAL Visual Object Classes Challenge 2007 (VOC2007) Annotation Guidelines
-This document reproduces the guidelines used for annotating images in the VOC2007 data set.
-Guidelines on what and how to label
+# CAM2 Image Labeling Guidelines
+ This document is a guide for how to label images.  It is mostly copied from the PASCAL VOC2007 image labeling guidelines.  
  
 ### What to label
 All objects of the defined categories, unless:

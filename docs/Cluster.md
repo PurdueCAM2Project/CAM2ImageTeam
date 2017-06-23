@@ -7,6 +7,13 @@ provide, or as a standalone guide that will teach you everything
 you need to know.
 
 -------
+## Logging Intel
+Once you have an account and have setup your two-factor authentication, you are ready to log in.  To log in, you should open a terminal and enter the following command:
+```
+ssh "user"@ssh-iam.intel-research.net
+```
+Make sure to replace "user" with your intel cluster username.  If it's the first time you've logged in, it will ask you if you want to add the RSA key for the cluster.  Make sure to type in 'yes'.  After that, it will ask you for your password.  Once you have successfully entered your password, it will ask you to choose a form of two factor authentication.  If you have setup the DUO app on your phone, you will be able to use the DUO push, which will allow you to authenticate with the app.  Otherwise, it will offer to call or text you a code to enter.  
+
 
 ## Using the PBS Scheduler
 Most things you do on the cluster: Vimming, test-compiling, etc. is done from your access node.
@@ -24,7 +31,7 @@ cd [ABSOLUTE PATH TO DIRECTORY OF EXECUTABLE]
 
 The cluster has 256 nodes.  You may choose to run your job on more nodes by changing the ```select``` value.
 
-> **IMPORTANT:** The ```cd``` is *very, very important.*  Otherwise, the job will fail to execute because none of your relatively-pathed dependencies can be located.
+> **IMPORTANT:** The ```cd``` is *very, very important.*  Otherwise, the job will fail to execute because none of your relatively-pathed dependencies can be located.  You can exclude the cd, but the tradeoff is that you will need to have full paths to all of your files.  Depending on the complexity of the program, using ```cd``` may be significantly easier.  
 
 A job submit bash script might look like:
 ```

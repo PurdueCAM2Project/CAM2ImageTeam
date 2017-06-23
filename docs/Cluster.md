@@ -1,6 +1,3 @@
-# Intel vLab Cluster guide
-The Intel vLab cluster is a vital tool for our research project.  
-=======
 # Intel Cluster vLab guide
 The Intel vLab Knights Landing cluster is a vital tool for our research project.
 The guide they publish is helpful, but can be confusing at times. 

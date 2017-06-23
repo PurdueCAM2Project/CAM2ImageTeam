@@ -1,6 +1,6 @@
 <div markdown="1" style="font-family: 'Ubuntu', sans-serif">
 
-[<<< Back to Image Team knowledge base home](index)
+[<<< Back to Image Team knowledge base home]()
 
 [//]: # (YOUR MARKDOWN CODE STARTS BELOW THIS LINE!!!)
 

@@ -1,4 +1,11 @@
-<div markdown="1" style="font-family:'Ubuntu', sans-serif">
+<div markdown="1" style="font-family: 'Ubuntu', sans-serif">
+
+[<<< Back to Image Team knowledge base home]()
+
+[//]: # (YOUR MARKDOWN CODE STARTS BELOW THIS LINE!!!)
+
+
+
 
 # CAM2 Image Labeling Guidelines
  This document is a guide for how to label images.  It is mostly copied from the PASCAL VOC2007 image labeling guidelines.  
@@ -52,5 +59,10 @@ Motorbike:
 
 Train:
    Includes train carriages, excludes trams
+
+
+
+
+[//]: # (YOUR MARKDOWN CODE ENDS ABOVE THIS LINE!!!)
 
 </div>

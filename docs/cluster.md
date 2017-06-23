@@ -1,3 +1,12 @@
+<div markdown="1" style="font-family: 'Ubuntu', sans-serif">
+
+[<<< Back to Image Team knowledge base home]()
+
+[//]: # (YOUR MARKDOWN CODE STARTS BELOW THIS LINE!!!)
+
+
+
+
 # Intel Cluster vLab guide
 The Intel vLab Knights Landing cluster is a vital tool for our research project.
 The guide they publish is helpful, but can be confusing at times. 
@@ -164,3 +173,12 @@ easy_install --user [PACKAGE]
 ## Helpful Websites for More Advanced Topics
 - [PBS scheduler guide](http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf)
 - [SGE reference manual](http://gridscheduler.sourceforge.net/htmlman/manuals.html)
+
+
+
+
+
+
+[//]: # (YOUR MARKDOWN CODE ENDS ABOVE THIS LINE!!!)
+
+</div>

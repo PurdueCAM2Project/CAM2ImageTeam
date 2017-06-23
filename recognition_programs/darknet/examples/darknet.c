@@ -490,13 +490,19 @@ int main(int argc, char **argv)
         mkimg(argv[2], argv[3], atoi(argv[4]), atoi(argv[5]), atoi(argv[6]), argv[7]);
     } else if (0 == strcmp(argv[1], "imtest")){
         test_resize(argv[2]);
-    } else if (0 == strcmp(argv[1], "batch")){
-        float threshold = find_float_arg(argc, argv, "-threshold", .24);
-        char *instream = find_char_arg(argc, argv, "-in", "-");
-        char *outstream = find_char_arg(argc, argv, "-out", "-");
-        fprintf(stdout, "\nProcessing a batch of images from: %s\n", instream);
-        batch_detector(threshold, instream, outstream, "cfg/coco.data", argv[2], argv[3]); // TODO: MUST RUN OTHER
-        fprintf(stdout, "\nWriting resulting CSV to %d\n", outstream);
+    }
+    
+    /**********************************************************
+     *** CAM2 IMAGE TEAM AUGMENTATIONS FOR BATCH PROCESSING ***
+     **********************************************************/
+    else if (0 == strcmp(argv[1], "batch"))
+    {
+        float thresh = find_float_arg(argc, argv, "-thresh", .24);
+        char *infilename = find_char_arg(argc, argv, "-in", "-");
+        char *outfilename = find_char_arg(argc, argv, "-out", "-");
+        printf("\nProcessing a batch of images from: %s\n", infilename);
+        printf("\nWriting resulting file to %d\n", outfilename);
+        batch_detector(infilename, outfilename, "cfg/coco.data", argv[2], argv[3], thresh); // TODO: MUST RUN OTHER
     } else {
         fprintf(stderr, "Not an option: %s\n", argv[1]);
     }

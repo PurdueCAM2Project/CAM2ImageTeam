@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
 <div markdown="1" style="font-family: 'Ubuntu', sans-serif">
 
-[<<< Back to Image Team knowledge base home](index)
+[<<< Back to Image Team knowledge base home](index?)
 
 [//]: # (YOUR MARKDOWN CODE STARTS BELOW THIS LINE!!!)
 
@@ -17,12 +17,23 @@ provide, or as a standalone guide that will teach you everything
 you need to know.
 
 -------
-## Logging in to the Cluster
+
+## Contents
+* [Logging in to the cluster](#logging-in-to-the-cluster)
+* [Using the PBS Scheduler](#using-the-pbs-scheduler)
+* [Running simple example jobs](#running-simple-example-jobs)
+* [Installing local packages](#installing-local-packages)
+* [Helpful websites for more advanced topics](#helpful-websites-for-more-advanced-topics)
+
+
+## Logging in to the cluster
 Once you have an account and have setup your two-factor authentication, you are ready to log in.  To log in, you should open a terminal and enter the following command:
 ```
 ssh "user"@ssh-iam.intel-research.net
 ```
-Make sure to replace "user" with your intel cluster username.  If it's the first time you've logged in, it will ask you if you want to add the RSA key for the cluster.  Make sure to type in 'yes'.  After that, it will ask you for your password.  Once you have successfully entered your password, it will ask you to choose a form of two factor authentication.  If you have setup the DUO app on your phone, you will be able to use the DUO push, which will allow you to authenticate with the app.  Otherwise, it will offer to call or text you a code to enter.  
+Make sure to replace "user" with your intel cluster username.  If it's the first time you've logged in, it will ask you if you want to add the RSA key for the cluster.  Make sure to type in 'yes'.  After that, it will ask you for your password.  Once you have successfully entered your password, it will ask you to choose a form of two factor authentication.  If you have setup the DUO app on your phone, you will be able to use the DUO push, which will allow you to authenticate with the app.  Otherwise, it will offer to call or text you a code to enter.
+
+> **TIP:** Once you've logged in, you can edit your ```.bashrc``` so that when you use the arrow keys to flip through your command history on the terminal, you can filter search by typing in letters. See the [team's Linux tips page](linux_tips?) for more details.
 
 
 ## Using the PBS Scheduler

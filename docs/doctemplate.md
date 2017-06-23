@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
 <div markdown="1" style="font-family: 'Ubuntu', sans-serif">
 
-[<<< Back to Image Team knowledge base home](index)
+[<<< Back to Image Team knowledge base home](index?)
 
 [//]: # (YOUR MARKDOWN CODE STARTS BELOW THIS LINE!!!)
 
@@ -16,26 +16,6 @@ A brief, clear summary of the contents of this doc go right here.  This specific
 ## Level 2 header
 
 Talk about stuff
-
-### Level 3 header
-
-Maybe have
-* bullet points
-* and more bullet points
-
-If there is code:
-```
-state it clearly
-```
-
-## Level 2 header
-Talk about more stuff
-
-### Level 3 header
-If there is anything particularly important to note:
-
-> **NOTE:** Make sure it is stated appropriately!  Use *italics* to drive home the point if need be.
-
 
 
 

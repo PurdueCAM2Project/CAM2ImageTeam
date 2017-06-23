@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
 <div markdown="1" style="font-family: 'Ubuntu', sans-serif">
 
-[<<< Back to Image Team knowledge base home](index?)
+[<<< Back to Image Team knowledge base home](index)
 
 [//]: # (YOUR MARKDOWN CODE STARTS BELOW THIS LINE!!!)
 
@@ -33,7 +33,7 @@ ssh "user"@ssh-iam.intel-research.net
 ```
 Make sure to replace "user" with your intel cluster username.  If it's the first time you've logged in, it will ask you if you want to add the RSA key for the cluster.  Make sure to type in 'yes'.  After that, it will ask you for your password.  Once you have successfully entered your password, it will ask you to choose a form of two factor authentication.  If you have setup the DUO app on your phone, you will be able to use the DUO push, which will allow you to authenticate with the app.  Otherwise, it will offer to call or text you a code to enter.
 
-> **TIP:** Once you've logged in, you can edit your ```.bashrc``` so that when you use the arrow keys to flip through your command history on the terminal, you can filter search by typing in letters. See the [team's Linux tips page](linux_tips?) for more details.
+> **TIP:** Once you've logged in, you can edit your ```.bashrc``` so that when you use the arrow keys to flip through your command history on the terminal, you can filter search by typing in letters. See the [team's Linux tips page](linux_tips) for more details.
 
 
 ## Using the PBS Scheduler

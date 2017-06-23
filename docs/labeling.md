@@ -1,3 +1,5 @@
+<div markdown="1" style="font-family:'Ubuntu', sans-serif">
+
 # CAM2 Image Labeling Guidelines
  This document is a guide for how to label images.  It is mostly copied from the PASCAL VOC2007 image labeling guidelines.  
  

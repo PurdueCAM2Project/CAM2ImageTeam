@@ -1,4 +1,4 @@
-# Intel Cluster vLab guide
+# Intel vLab Cluster guide
 The Intel vLab cluster is a vital tool for our research project.  
 The guide they publish is helpful, but can be confusing at times. 
 This document is intended to help users learn how to use the 

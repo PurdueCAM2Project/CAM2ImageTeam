@@ -1,6 +1,7 @@
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
 <div markdown="1" style="font-family: 'Ubuntu', sans-serif">
 
-[<<< Back to Image Team knowledge base home]()
+[<<< Back to Image Team knowledge base home](index)
 
 [//]: # (YOUR MARKDOWN CODE STARTS BELOW THIS LINE!!!)
 
@@ -16,7 +17,7 @@ provide, or as a standalone guide that will teach you everything
 you need to know.
 
 -------
-## Logging Intel
+## Logging in to the Cluster
 Once you have an account and have setup your two-factor authentication, you are ready to log in.  To log in, you should open a terminal and enter the following command:
 ```
 ssh "user"@ssh-iam.intel-research.net

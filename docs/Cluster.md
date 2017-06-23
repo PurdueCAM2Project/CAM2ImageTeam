@@ -154,7 +154,6 @@ easy_install --user [PACKAGE]
 ````
 ------
 
-## Helpful Websites for Reference
-### PBS Scheduler
-* http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf
-* http://gridscheduler.sourceforge.net/htmlman/manuals.html
+## Helpful Websites for More Advanced Topics
+- [PBS scheduler guide](http://www.pbsworks.com/pdfs/PBSProUserGuide13.1.pdf)
+- [SGE reference manual](http://gridscheduler.sourceforge.net/htmlman/manuals.html)

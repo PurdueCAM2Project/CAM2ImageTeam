@@ -8,8 +8,9 @@ Knowledge is power...
 Unlimited power awaits.
 
 ## Guides and how-tos
-* [Using the Intel vLab KNI computing cluster](cluster)
-* [Image labeling guidelines](labeling)
+* [Using the Intel vLab KNI computing cluster](cluster?)
+* [Image labeling guidelines](labeling?)
+* [Linux tips](linux_tips?)
 
 ## Documentation
 * [Template markdown file](doctemplate)

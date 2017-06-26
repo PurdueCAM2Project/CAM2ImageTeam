@@ -1,5 +1,5 @@
 """
-This module can write the contents of a directory to an output file.
+This module can write the filenames inside of a directory to an output file.
 
 *****************************
 Command Line Usage: python directorycontents.py [RELATIVE DIR PATH] [OUTPUT FILE PATH]
@@ -41,7 +41,10 @@ def dir_to_file(directory, output_filename, prefix=None):
                 if prefix is None: # Default behavior, just write root name as prefix
                     output_f.write(root + filename + '\n')
                 else:
-                    output_f.write(prefix + filename + '\n')
+                    if prefix.endswith('/'): # Don't write in an extra '/' if user provided one
+                        output_f.write(prefix + filename + '\n')
+                    else:
+                        output_f.write(prefix + '/' + filename + '\n')
 
         output_f.close()
 
@@ -62,8 +65,8 @@ def main():
     Writes the filenames in a directory to a single file, with the option to add
     a prefix if desired.\n
     Expects either 2 or 3 command line args:
-    python directorycontents.py [RELATIVE DIR PATH] [OUTPUT FILE PATH]
-    or python directorycontents.py [RELATIVE DIR PATH] [OUTPUT FILE PATH] [PREFIX]\n
+    python directorycontents.py [DIRECTORY PATH] [OUTPUT FILE PATH]
+    or python directorycontents.py [DIRECTORY PATH] [OUTPUT FILE PATH] [PREFIX]\n
     Note: [PREFIX] is the prefix you wish to attach to the filenames (e.g. 'somedir/')
     """
 

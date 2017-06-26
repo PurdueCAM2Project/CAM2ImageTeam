@@ -782,7 +782,7 @@ void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cf
         endtime = clock();
 
         numimgsprocessed++;
-        avgfps = ((numimgsprocessed-1)*avgfps + sec(endtime-starttime))/numimgsprocessed;
+        avgfps = 1/(((numimgsprocessed-1)*avgfps + sec(endtime-starttime))/numimgsprocessed);
 
         printf("\nRunning Average FPS: %f\n", avgfps);
 

@@ -501,8 +501,8 @@ int main(int argc, char **argv)
         char *infilename = find_char_arg(argc, argv, "-in", "-");
         char *outfilename = find_char_arg(argc, argv, "-out", "-");
         printf("\nProcessing a batch of images from: %s\n", infilename);
-        printf("\nWriting resulting file to %d\n", outfilename);
-        batch_detector(infilename, outfilename, "cfg/coco.data", argv[2], argv[3], thresh); // TODO: MUST RUN OTHER
+        printf("\nWriting resulting file to %s\n", outfilename);
+        batch_detector(infilename, outfilename, argv[2], argv[3], argv[4], thresh); // TODO: MUST RUN OTHER
     } else {
         fprintf(stderr, "Not an option: %s\n", argv[1]);
     }

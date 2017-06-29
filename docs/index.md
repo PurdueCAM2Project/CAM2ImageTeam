@@ -12,6 +12,7 @@ Unlimited power awaits.
 * [Image labeling guidelines](labeling)
 * [Linux tips](linux_tips)
 * [Using the Intel vLab KNI computing cluster](cluster)
+* [Setting up caffe on the intel cluster](setting_up_intel_optimized_caffe)
 
 ## Documentation
 * [Team and codebase management standards](team_standards)

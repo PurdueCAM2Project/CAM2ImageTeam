@@ -1,0 +1,20 @@
+If you want to install caffe on your access node or local, the steps that you need to follow are:
+
+1. Login to the cluster
+2. Create a directory where you want to install caffe. (mkdir <directory name> )
+3. you can check that git is installed by the command : git --version 
+4. Clone the repository from https://github.com/intel/caffe and NOT the link given in the university guide. git clone  https://github.com/intel/caffe
+5. Change directory to the location where the Caffe optimized for Intel architecture repository is cloned
+and build the framework to use Intel® Math Kernel Library for Deep Neural Networks (Intel® MKL-DNN) APIs which provide optimized implementations of convolution, pooling, normalization, and other key DNN operations on Intel Xeon Phi processor x200. After performing the instructions below you will have a binary, named caffe, at ~/caffe/build/tools/ (assuming the repository is cloned to ~/caffe):
+Copy Makefile.config.example to Makefile.config using the command:
+   cp Makefile.config.example Makefile.config
+
+6. Now, to open or edit the new Makefile.config file, you can use vim Makefile.config. 
+7. use ‘i’ key for intert mode, esc key to come out of insert mode, :wq to save and exit.
+   Add the following lines:
+  
+   USE_MPI := 1
+   CXX := /opt/intel/compilers_and_libraries_2017.1.132/linux/mpi/intel64/bin/mpicxx
+   
+8. To run use the following command from the university guide:	make -j44
+

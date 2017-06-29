@@ -784,7 +784,7 @@ void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cf
         numimgsprocessed++;
         avgfps = 1/(((numimgsprocessed-1)*avgfps + sec(endtime-starttime))/numimgsprocessed);
 
-        printf("\nRunning Average FPS: %f\n", avgfps);
+        printf("\nProcessed %s. Running Average FPS: %f\n", input, avgfps);
 
         get_region_boxes(l, im.w, im.h, net.w, net.h, thresh, probs, boxes, 1, 0, .5, 1);
         

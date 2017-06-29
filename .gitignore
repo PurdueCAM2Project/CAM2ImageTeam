@@ -1,0 +1,5 @@
+# No weights files
+recognition_programs/darknet/*.weights
+
+# No VS Code artifacts
+.vscode/*

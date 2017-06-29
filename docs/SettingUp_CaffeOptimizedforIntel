@@ -9,7 +9,12 @@ and build the framework to use Intel® Math Kernel Library for Deep Neural Netwo
 Copy Makefile.config.example to Makefile.config using the command:
    cp Makefile.config.example Makefile.config
 
-6. Now, to open or edit the new Makefile.config file, you can use vim Makefile.config
-7. use ‘i’ key for intert mode, esc key to come out of insert mode, :wq to save and exit
+6. Now, to open or edit the new Makefile.config file, you can use vim Makefile.config. 
+7. use ‘i’ key for intert mode, esc key to come out of insert mode, :wq to save and exit.
+   Add the following lines:
+  
+   USE_MPI := 1
+   CXX := /opt/intel/compilers_and_libraries_2017.1.132/linux/mpi/intel64/bin/mpicxx
+   
 8. To run use the following command from the university guide:	make -j44
 

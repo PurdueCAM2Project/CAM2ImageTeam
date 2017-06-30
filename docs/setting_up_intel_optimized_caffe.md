@@ -41,7 +41,8 @@ To install caffe with intel optimized MKLDNN, please follow these steps:
     ```
 7. Run the following make command.  It will fail, but it is required to run it once before the next step.
     ```
-    make all -j8 && make all
+    
+    -j8 && make install
     ```
 8. Once it fails, move back into your caffe root
 9. Execute the following command:
@@ -99,7 +100,7 @@ To install caffe with intel optimized MKLDNN, please follow these steps:
 15. Change directory back into your build directory and redo the make command.
     ```
     cd build
-    make all -j8 && make all
+    make all -j8 && make install
     ```
 16. You should now have a functioning version of caffe build with MKLDNN optimized for intel Xeon and Xeon Phi processers.  If you would like, you can try to do a test, but I have not ran it successfully yet. This should be executed in the build directory.  
     ```

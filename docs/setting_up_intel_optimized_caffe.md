@@ -41,8 +41,7 @@ To install caffe with intel optimized MKLDNN, please follow these steps:
     ```
 7. Run the following make command.  It will fail, but it is required to run it once before the next step.
     ```
-    
-    -j8 && make install
+    make all -j8 && make install
     ```
 8. Once it fails, move back into your caffe root
 9. Execute the following command:

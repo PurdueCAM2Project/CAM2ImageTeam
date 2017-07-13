@@ -756,6 +756,7 @@ void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cf
     clock_t endtime;
     int numimgsprocessed = 0;
     float avgfps = 0;
+    float totaltime = 0;
 
     while (1)
     {
@@ -782,7 +783,8 @@ void batch_detector(char* infilename, char* outfilename, char* datacfg, char* cf
         endtime = clock();
 
         numimgsprocessed++;
-        avgfps = 1/(((numimgsprocessed-1)*avgfps + sec(endtime-starttime))/numimgsprocessed);
+        totaltime += sec(endtime-starttime);
+        avgfps = totaltime/numimgsprocessed;
 
         printf("\nProcessed %s. Running Average FPS: %f\n", input, avgfps);
 

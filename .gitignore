@@ -1,5 +1,11 @@
 # No weights files
 recognition_programs/darknet/*.weights
 
+# No obj dirs
+recognition_programs/darknet/obj/
+recognition_programs/darknet/obj/*
+recognition_programs/darknet/darknet
+recognition_programs/darknet/libdarknet*
+
 # No VS Code artifacts
 .vscode/*

@@ -6,20 +6,20 @@ For more information see the [Darknet project website](http://pjreddie.com/darkn
 
 For questions or issues about Darknet, please use the [Google Group](https://groups.google.com/forum/#!forum/darknet).
 
-Remember to ```make``` Darknet befor running.
-
 CAM2 Image Team Augmentations
 -------
 
+> You can compile Darknet by simply running ```make``` in the "darknet" directory; however, this will build **without** GPU support.
+
 The YOLO detector was modified to run object detection on multiple objects.  This can be run with the command:
 ```
-./darknet batch [CONFIG FILE] [WEIGHTS FILE] -in [INPUT FILE] -out [OUTPUT FILE] -thresh [DESIRED MIN CONFIDENCE]
+./darknet batch [DATA FILE] [CONFIG FILE] [WEIGHTS FILE] -in [INPUT FILE] -out [OUTPUT FILE] -thresh [DESIRED MIN CONFIDENCE]
 ```
 The input file is a text file that lists all the images in the batch (each image path should get its own line in the file; see images.txt for example).
 
 An example of this command is:
 ```
-./darknet batch cfg/yolo.cfg yolo.weights -in images.txt -out imagesresult.txt -thresh 0.25
+./darknet batch cfg/coco.data cfg/yolo.cfg yolo.weights -in images.txt -out imagesresult.txt -thresh 0.25
 ```
 > **NOTE:** "yolo.weights" can be obtained via ```wget https://pjreddie.com/media/files/yolo.weights```
 

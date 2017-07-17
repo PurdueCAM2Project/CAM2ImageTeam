@@ -8,7 +8,8 @@
 
 
 # INTER-CAMERA OBJECT TRACKING
-This document is a brief outline of what the code for Inter Camera Tracking set out to achieve and what it does. It provides details about how to use the code on 
+
+####This document is a brief outline of what the code for Inter Camera Tracking set out to achieve and what it does. It provides details about how to use the code on 
 your system and about the pre-requisites, as in the required files and softwares for compilation.
 -------
 

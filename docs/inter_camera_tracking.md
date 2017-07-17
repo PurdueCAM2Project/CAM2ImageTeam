@@ -12,14 +12,10 @@
 This document is a brief outline of what the code for Inter Camera Tracking set out to achieve and what it does. 
 ---- 
 
-
-## Level 2 header
-
-
-##	Problem Statement: Develop an approach and write to code for tracking similar objects over multiple images. As an example, if the same car was found in images
+###	Problem Statement: Develop an approach and write to code for tracking similar objects over multiple images. As an example, if the same car was found in images
 	in two different traffic cameras, we want to be able to group those two images and state than those images contain the same car.
 
-##	My approach to the problem: 
+###	My approach to the problem: 
 
 	Assumption: Similar objects will give similar hash values if a hash function is applied over the area of the image that the object occupies. This would lead to a 
 		    significant computational advantage as we would have smaller clusters of images to compare them against as opposed to the entire dataset that we have.
@@ -36,7 +32,7 @@ This document is a brief outline of what the code for Inter Camera Tracking set 
 	-	This step is just supposed to return sets of images with similar objects after running the comparison in the previous step, which we haven’t been able to 
 		so far.
 
-##	Installation instruction and code: 
+###	Installation instruction and code: 
 
 	-	The code can be found at this link: https://github.com/PurdueCAM2Project/CAM2ImageTeam/tree/master/InterCamTracking
 	-	This can be accessed via a simple pull command.	
@@ -45,7 +41,7 @@ This document is a brief outline of what the code for Inter Camera Tracking set 
 	-	To use this code, just run the command python createClass.py, before you do this however, you need to have a file of labels as mentioned in the previous step. 
 	-	The output of the code is clusters of images which might have similar objects. That is all the progress that has been made on this problem that has been made
 		so far. 
-##	Possible alternative approaches:
+###	Possible alternative approaches:
 
 	-	If we have geographical data and timing we could build a probabilistic model to tell whether two objects are similar. Say, a pink car was spotted in a
 		cameras 3 miles apart with a time difference of 5 minutes, we could say it is likely that both the images contain the same car. But, beyond rare colors

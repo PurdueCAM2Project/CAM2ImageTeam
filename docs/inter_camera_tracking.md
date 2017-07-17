@@ -49,8 +49,16 @@ significant computational advantage as we would have smaller clusters of images 
 	cameras 3 miles apart with a time difference of 5 minutes, we could say it is likely that both the images contain the same car. But, beyond rare colors
 	and models, even this approach would break down. 
 
+* 	This is again slightly similar to the approach listed above. This uses the geographical location and image timing data given by the camera. And this again
+	works much better for rarer colors. Unlike the previous model though, this model will utilize much more geometry, specifically much more of trigonometry 
+	and use spatial data to be able to tell whether the given cars are similar or not. This approach will be much less probablistic and much more math-intensive
+	than the approach listed above.
 
+### Resources found during the project
 
+*	https://pdfs.semanticscholar.org/2618/5d1f0135fb43fb4d7dab863fd83c8f3099bd.pdf --- Andrew Gilbert and Richard Bowden, University of Surrey, Guildford
+*	http://www.sciencedirect.com/science/article/pii/S003132031300263X --- X Chen, K Huang, T Tan
+* 	http://ieeexplore.ieee.org/document/5479164/ --- T Montcalm and B Boufama, Univ. of Windsor, Windsor 
 
 [//]: # (YOUR MARKDOWN CODE ENDS ABOVE THIS LINE!!!)
 

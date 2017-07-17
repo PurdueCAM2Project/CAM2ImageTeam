@@ -9,10 +9,8 @@
 
 # INTER-CAMERA OBJECT TRACKING
 
-####This document is a brief outline of what the code for Inter Camera Tracking set out to achieve and what it does. It provides details about how to use the code on 
-your system and about the pre-requisites, as in the required files and softwares for compilation.
--------
-
+	This document is a brief outline of what the code for Inter Camera Tracking set out to achieve and what it does. It provides details about how to use the code on 
+	your system and about the pre-requisites, as in the required files and softwares for compilation.
 
 ###	Problem Statement: Develop an approach and write to code for tracking similar objects over multiple images. As an example, if the same car was found in images
 	in two different traffic cameras, we want to be able to group those two images and state than those images contain the same car.

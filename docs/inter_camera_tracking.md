@@ -69,6 +69,10 @@ significant computational advantage as we would have smaller clusters of images 
 *	None of the resources I encountered over the internet are open source. So, I was able to go through papers and work out what approach to take. Even the 
 	research documents that did try to explain what they did involved very high level mathematics which is beyond the scope of my understanding at this	
 	point.
+	
+	
+	
+	
 [//]: # (YOUR MARKDOWN CODE ENDS ABOVE THIS LINE!!!)
 
 </div>

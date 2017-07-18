@@ -56,10 +56,19 @@ significant computational advantage as we would have smaller clusters of images 
 
 ### Resources found during the project
 
-*	https://pdfs.semanticscholar.org/2618/5d1f0135fb43fb4d7dab863fd83c8f3099bd.pdf --- Andrew Gilbert and Richard Bowden, University of Surrey, Guildford
-*	http://www.sciencedirect.com/science/article/pii/S003132031300263X --- X Chen, K Huang, T Tan
-* 	http://ieeexplore.ieee.org/document/5479164/ --- T Montcalm and B Boufama, Univ. of Windsor, Windsor 
+*	Tracking objects across cameras by incrementally learning inter-camera colour calibration and patterns of activity ---
+	https://pdfs.semanticscholar.org/2618/5d1f0135fb43fb4d7dab863fd83c8f3099bd.pdf --- Andrew Gilbert and Richard Bowden, University of Surrey, Guildford
+*	Object tracking across non-overlapping views by learning inter-camera transfer models --- http://www.sciencedirect.com/science/article/pii/S003132031300263X
+	--- X Chen, K Huang, T Tan
+* 	Object Inter-camera Tracking with Non-overlapping Views: A New Dynamic Approach --- http://ieeexplore.ieee.org/document/5479164/ ---
+	T Montcalm and B Boufama, Univ. of Windsor, Windsor 
 
+### Problems encountered in the project
+*	I was able to cluster the hash values, but I was not able to cluster the objects/array indices accordingly as only the values are being used to form clusters.
+	I thought of using a dictionary for this purpose but that failed as the hash values were not unique owing to the size of the image set.
+*	None of the resources I encountered over the internet are open source. So, I was able to go through papers and work out what approach to take. Even the 
+	research documents that did try to explain what they did involved very high level mathematics which is beyond the scope of my understanding at this	
+	point.
 [//]: # (YOUR MARKDOWN CODE ENDS ABOVE THIS LINE!!!)
 
 </div>

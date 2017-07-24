@@ -1,78 +1,0 @@
-ffmpeg version 2.6.8 Copyright (c) 2000-2016 the FFmpeg developers
-  built with gcc 4.8.5 (GCC) 20150623 (Red Hat 4.8.5-4)
-  configuration: --prefix=/usr --bindir=/usr/bin --datadir=/usr/share/ffmpeg --incdir=/usr/include/ffmpeg --libdir=/usr/lib64 --mandir=/usr/share/man --arch=x86_64 --optflags='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic' --enable-bzlib --disable-crystalhd --enable-gnutls --enable-ladspa --enable-libass --enable-libcdio --enable-libdc1394 --enable-libfaac --enable-nonfree --enable-libfdk-aac --enable-nonfree --disable-indev=jack --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-openal --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvorbis --enable-libv4l2 --enable-libx264 --enable-libx265 --enable-libxvid --enable-x11grab --enable-avfilter --enable-avresample --enable-postproc --enable-pthreads --disable-static --enable-shared --enable-gpl --disable-debug --disable-stripping --shlibdir=/usr/lib64 --enable-runtime-cpudetect
-  libavutil      54. 20.100 / 54. 20.100
-  libavcodec     56. 26.100 / 56. 26.100
-  libavformat    56. 25.101 / 56. 25.101
-  libavdevice    56.  4.100 / 56.  4.100
-  libavfilter     5. 11.102 /  5. 11.102
-  libavresample   2.  1.  0 /  2.  1.  0
-  libswscale      3.  1.101 /  3.  1.101
-  libswresample   1.  1.100 /  1.  1.100
-  libpostproc    53.  3.100 / 53.  3.100
-Input #0, hls,applehttp, from 'http://video3.earthcam.com/fecnetwork/9974.flv/chunklist_w1220748217.m3u8':
-  Duration: N/A, start: 78196.706556, bitrate: N/A
-  Program 0 
-    Metadata:
-      variant_bitrate : 0
-    Stream #0:0: Data: timed_id3 (ID3  / 0x20334449)
-    Stream #0:1: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuvj420p(pc, bt709), 1280x720 [SAR 1:1 DAR 16:9], 30 tbr, 90k tbn, 180k tbc
-    Stream #0:2: Audio: aac (LC) ([15][0][0][0] / 0x000F), 32000 Hz, mono, fltp, 128 kb/s
-[swscaler @ 0xcbc3e0] deprecated pixel format used, make sure you did set range correctly
-Output #0, image2pipe, to 'pipe:':
-  Metadata:
-    encoder         : Lavf56.25.101
-    Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc
-    Metadata:
-      encoder         : Lavc56.26.100 rawvideo
-Stream mapping:
-  Stream #0:1 -> #0:0 (h264 (native) -> rawvideo (native))
-Press [q] to stop, [?] for help
-frame=    2 fps=0.0 q=0.0 size=    5400kB time=00:00:00.06 bitrate=663548.7kbits/s    frame=    4 fps=3.0 q=0.0 size=   10800kB time=00:00:00.13 bitrate=663553.7kbits/s    frame=    5 fps=2.6 q=0.0 size=   13500kB time=00:00:00.16 bitrate=663550.7kbits/s    frame=    5 fps=2.0 q=0.0 size=   13500kB time=00:00:00.16 bitrate=663550.7kbits/s    frame=    7 fps=2.3 q=0.0 size=   18900kB time=00:00:00.23 bitrate=663552.9kbits/s    frame=    8 fps=2.2 q=0.0 size=   21600kB time=00:00:00.26 bitrate=663551.2kbits/s    frame=    8 fps=1.9 q=0.0 size=   21600kB time=00:00:00.26 bitrate=663551.2kbits/s    frame=   10 fps=2.1 q=0.0 size=   27000kB time=00:00:00.33 bitrate=663552.7kbits/s    frame=   11 fps=2.0 q=0.0 size=   29700kB time=00:00:00.36 bitrate=663551.4kbits/s    frame=   11 fps=1.8 q=0.0 size=   29700kB time=00:00:00.36 bitrate=663551.4kbits/s    frame=   13 fps=2.0 q=0.0 size=   35100kB time=00:00:00.43 bitrate=663552.5kbits/s    frame=   14 fps=1.9 q=0.0 size=   37800kB time=00:00:00.46 bitrate=663551.5kbits/s    frame=   14 fps=1.8 q=0.0 size=   37800kB time=00:00:00.46 bitrate=663551.5kbits/s    frame=   16 fps=1.9 q=0.0 size=   43200kB time=00:00:00.53 bitrate=663552.4kbits/s    frame=   16 fps=1.8 q=0.0 size=   43200kB time=00:00:00.53 bitrate=663552.4kbits/s    frame=   18 fps=1.9 q=0.0 size=   48600kB time=00:00:00.60 bitrate=663552.0kbits/s    frame=   19 fps=1.9 q=0.0 size=   51300kB time=00:00:00.63 bitrate=663552.3kbits/s    frame=   19 fps=1.8 q=0.0 size=   51300kB time=00:00:00.63 bitrate=663552.3kbits/s    frame=   21 fps=1.8 q=0.0 size=   56700kB time=00:00:00.70 bitrate=663552.0kbits/s    frame=   22 fps=1.8 q=0.0 size=   59400kB time=00:00:00.73 bitrate=663552.3kbits/s    frame=   22 fps=1.8 q=0.0 size=   59400kB time=00:00:00.73 bitrate=663552.3kbits/s    frame=   24 fps=1.8 q=0.0 size=   64800kB time=00:00:00.80 bitrate=663552.0kbits/s    frame=   25 fps=1.8 q=0.0 size=   67500kB time=00:00:00.83 bitrate=663552.3kbits/s    frame=   25 fps=1.7 q=0.0 size=   67500kB time=00:00:00.83 bitrate=663552.3kbits/s    frame=   27 fps=1.8 q=0.0 size=   72900kB time=00:00:00.90 bitrate=663552.0kbits/s    frame=   28 fps=1.8 q=0.0 size=   75600kB time=00:00:00.93 bitrate=663552.2kbits/s    frame=   28 fps=1.7 q=0.0 size=   75600kB time=00:00:00.93 bitrate=663552.2kbits/s    frame=   30 fps=1.8 q=0.0 size=   81000kB time=00:00:01.00 bitrate=663552.0kbits/s    frame=   30 fps=1.7 q=0.0 size=   81000kB time=00:00:01.00 bitrate=663552.0kbits/s    frame=   30 fps=1.7 q=0.0 Lsize=   81000kB time=00:00:01.00 bitrate=663552.0kbits/s    
-video:81000kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%
-
-real	0m19.134s
-user	0m36.086s
-sys	0m12.683s
-ffmpeg version 2.6.8 Copyright (c) 2000-2016 the FFmpeg developers
-  built with gcc 4.8.5 (GCC) 20150623 (Red Hat 4.8.5-4)
-  configuration: --prefix=/usr --bindir=/usr/bin --datadir=/usr/share/ffmpeg --incdir=/usr/include/ffmpeg --libdir=/usr/lib64 --mandir=/usr/share/man --arch=x86_64 --optflags='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic' --enable-bzlib --disable-crystalhd --enable-gnutls --enable-ladspa --enable-libass --enable-libcdio --enable-libdc1394 --enable-libfaac --enable-nonfree --enable-libfdk-aac --enable-nonfree --disable-indev=jack --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-openal --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvorbis --enable-libv4l2 --enable-libx264 --enable-libx265 --enable-libxvid --enable-x11grab --enable-avfilter --enable-avresample --enable-postproc --enable-pthreads --disable-static --enable-shared --enable-gpl --disable-debug --disable-stripping --shlibdir=/usr/lib64 --enable-runtime-cpudetect
-  libavutil      54. 20.100 / 54. 20.100
-  libavcodec     56. 26.100 / 56. 26.100
-  libavformat    56. 25.101 / 56. 25.101
-  libavdevice    56.  4.100 / 56.  4.100
-  libavfilter     5. 11.102 /  5. 11.102
-  libavresample   2.  1.  0 /  2.  1.  0
-  libswscale      3.  1.101 /  3.  1.101
-  libswresample   1.  1.100 /  1.  1.100
-  libpostproc    53.  3.100 / 53.  3.100
-Input #0, hls,applehttp, from 'http://video3.earthcam.com/fecnetwork/9974.flv/chunklist_w1220748217.m3u8':
-  Duration: N/A, start: 78214.668556, bitrate: N/A
-  Program 0 
-    Metadata:
-      variant_bitrate : 0
-    Stream #0:0: Data: timed_id3 (ID3  / 0x20334449)
-    Stream #0:1: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuvj420p(pc, bt709), 1280x720 [SAR 1:1 DAR 16:9], 30 tbr, 90k tbn, 180k tbc
-    Stream #0:2: Audio: aac (LC) ([15][0][0][0] / 0x000F), 32000 Hz, mono, fltp, 127 kb/s
-[swscaler @ 0x19d0000] deprecated pixel format used, make sure you did set range correctly
-[swscaler @ 0x1a0a540] deprecated pixel format used, make sure you did set range correctly
-Output #0, image2pipe, to 'pipe:':
-  Metadata:
-    encoder         : Lavf56.25.101
-    Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc
-    Metadata:
-      encoder         : Lavc56.26.100 rawvideo
-Output #1, image2, to 'DiskFrames/frame%0d.png':
-  Metadata:
-    encoder         : Lavf56.25.101
-    Stream #1:0: Video: png, rgb24, 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc
-    Metadata:
-      encoder         : Lavc56.26.100 png
-Stream mapping:
-  Stream #0:1 -> #0:0 (h264 (native) -> rawvideo (native))
-  Stream #0:1 -> #1:0 (h264 (native) -> png (native))
-Press [q] to stop, [?] for help
-frame=    2 fps=0.0 q=0.0 q=0.0 size=    5400kB time=00:00:00.06 bitrate=663548.7kbits/s dup=2 drop=0    frame=    4 fps=3.2 q=0.0 q=0.0 size=   10800kB time=00:00:00.13 bitrate=663553.7kbits/s dup=2 drop=0    frame=    4 fps=2.2 q=0.0 q=0.0 size=   10800kB time=00:00:00.13 bitrate=663553.7kbits/s dup=2 drop=0    frame=    6 fps=2.6 q=0.0 q=0.0 size=   16200kB time=00:00:00.20 bitrate=663552.0kbits/s dup=2 drop=0    frame=    7 fps=2.4 q=0.0 q=0.0 size=   18900kB time=00:00:00.23 bitrate=663552.9kbits/s dup=2 drop=0    frame=    7 fps=2.0 q=0.0 q=0.0 size=   18900kB time=00:00:00.23 bitrate=663552.9kbits/s dup=2 drop=0    frame=    9 fps=2.2 q=0.0 q=0.0 size=   24300kB time=00:00:00.30 bitrate=663552.0kbits/s dup=2 drop=0    frame=   10 fps=2.1 q=0.0 q=0.0 size=   27000kB time=00:00:00.33 bitrate=663552.7kbits/s dup=2 drop=0    frame=   10 fps=1.9 q=0.0 q=0.0 size=   27000kB time=00:00:00.33 bitrate=663552.7kbits/s dup=2 drop=0    frame=   12 fps=2.1 q=0.0 q=0.0 size=   32400kB time=00:00:00.40 bitrate=663552.0kbits/s dup=2 drop=0    frame=   13 fps=2.1 q=0.0 q=0.0 size=   35100kB time=00:00:00.43 bitrate=663552.5kbits/s dup=2 drop=0    frame=   13 fps=1.9 q=0.0 q=0.0 size=   35100kB time=00:00:00.43 bitrate=663552.5kbits/s dup=2 drop=0    frame=   15 fps=2.0 q=0.0 q=0.0 size=   40500kB time=00:00:00.50 bitrate=663552.0kbits/s dup=2 drop=0    frame=   16 fps=2.0 q=0.0 q=0.0 size=   43200kB time=00:00:00.53 bitrate=663552.4kbits/s dup=2 drop=0    frame=   16 fps=1.9 q=0.0 q=0.0 size=   43200kB time=00:00:00.53 bitrate=663552.4kbits/s dup=2 drop=0    frame=   18 fps=2.0 q=0.0 q=0.0 size=   48600kB time=00:00:00.60 bitrate=663552.0kbits/s dup=2 drop=0    frame=   19 fps=2.0 q=0.0 q=0.0 size=   51300kB time=00:00:00.63 bitrate=663552.3kbits/s dup=2 drop=0    frame=   19 fps=1.9 q=0.0 q=0.0 size=   51300kB time=00:00:00.63 bitrate=663552.3kbits/s dup=2 drop=0    frame=   21 fps=1.9 q=0.0 q=0.0 size=   56700kB time=00:00:00.70 bitrate=663552.0kbits/s dup=2 drop=0    frame=   22 fps=1.9 q=0.0 q=0.0 size=   59400kB time=00:00:00.73 bitrate=663552.3kbits/s dup=2 drop=0    frame=   22 fps=1.8 q=0.0 q=0.0 size=   59400kB time=00:00:00.73 bitrate=663552.3kbits/s dup=2 drop=0    frame=   24 fps=1.9 q=0.0 q=0.0 size=   64800kB time=00:00:00.80 bitrate=663552.0kbits/s dup=2 drop=0    frame=   25 fps=1.9 q=0.0 q=0.0 size=   67500kB time=00:00:00.83 bitrate=663552.3kbits/s dup=2 drop=0    frame=   25 fps=1.8 q=0.0 q=0.0 size=   67500kB time=00:00:00.83 bitrate=663552.3kbits/s dup=2 drop=0    frame=   27 fps=1.9 q=0.0 q=0.0 size=   72900kB time=00:00:00.90 bitrate=663552.0kbits/s dup=2 drop=0    frame=   28 fps=1.9 q=0.0 q=0.0 size=   75600kB time=00:00:00.93 bitrate=663552.2kbits/s dup=2 drop=0    frame=   28 fps=1.8 q=0.0 q=0.0 size=   75600kB time=00:00:00.93 bitrate=663552.2kbits/s dup=2 drop=0    frame=   30 fps=1.9 q=0.0 q=0.0 size=   81000kB time=00:00:01.00 bitrate=663552.0kbits/s dup=2 drop=0    frame=   30 fps=1.8 q=0.0 q=0.0 size=   81000kB time=00:00:01.00 bitrate=663552.0kbits/s dup=2 drop=0    frame=   30 fps=1.8 q=0.0 q=0.0 size=   81000kB time=00:00:01.03 bitrate=642147.3kbits/s dup=2 drop=0    
-real	0m18.191s
-user	0m18.429s
-sys	0m10.813s

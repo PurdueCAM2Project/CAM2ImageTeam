@@ -1,0 +1,41 @@
+<!--
+    Fetches all the system-unique fonts needed for the website via GET requests.
+
+    Authors: Caleb Tung,
+    © 2017 The CAM² Group.
+-->
+
+<style>
+    /* IN ALPHABETICAL ORDER */
+    
+    @font-face
+    {
+        font-family: 'Droid Sans Mono';
+        src: url("{{ '/fonts/Droid_Sans_Mono/DroidSansMono.ttf' | prepend: site.baseurl }}");
+    }
+    
+    /* UNCOMMENT BELOW IF YOU NEED THIS FONT. */
+    /* @font-face
+    {
+        font-family: 'Exo 2';
+        src: url("{{ '/fonts/Exo_2/Exo2-Regular.ttf' | prepend: site.baseurl }}");
+    } */
+
+    @font-face
+    {
+        font-family: 'Raleway';
+        src: url("{{ '/fonts/Raleway/Raleway-Regular.ttf' | prepend: site.baseurl }}");
+    }
+
+    @font-face
+    {
+        font-family: 'Ubuntu';
+        src: url("{{ '/fonts/Ubuntu/Ubuntu-Regular.ttf' | prepend: site.baseurl }}");
+    }
+
+    @font-face
+    {
+        font-family: 'Ubuntu Light';
+        src: url("{{ '/fonts/Ubuntu/Ubuntu-Light.ttf' | prepend: site.baseurl }}");
+    }
+</style>

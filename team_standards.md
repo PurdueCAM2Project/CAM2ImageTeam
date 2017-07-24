@@ -1,10 +1,10 @@
 ---
 layout: kbase_article
-title: Image Team standards and Github guidelines
+title: Team standards and Github guidelines
 ---
 
 
-# Image Team project standards
+# Team project standards
 
 In order to facilitate smooth collaboration among team members, please try to satisfy these project standards as you do your research.
 

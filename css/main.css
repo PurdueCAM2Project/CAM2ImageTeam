@@ -179,7 +179,7 @@ header a:hover
     font-family: 'Ubuntu Light', sans-serif;
 }
 
-#article-content p, #article-content a
+#article-content
 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;

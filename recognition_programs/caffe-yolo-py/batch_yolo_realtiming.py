@@ -143,25 +143,51 @@ def main(argv):
 
 	img_list_file = open(img_list_filename, 'r')
 
-	avg_fps = 0.0001
-	time_spent=0
+
 	imagesProcessed = 0
+
+	loadTime = 0
+	preprocTime = 0
+	asarrayTime = 0
+	fwdallTime = 0
+
 	startOverall=datetime.now()
 	for line in img_list_file:
 		img_filename = line.strip()
+		
+		startLoad = datetime.now()
 		img = caffe.io.load_image(img_filename) # load the image using caffe io
+		endLoad = datetime.now()
+		myLoad = (endLoad-startLoad).total_seconds()
+
+		loadTime += myLoad
+
 		inputs = img
-		start = datetime.now()
-		out = net.forward_all(data=np.asarray([transformer.preprocess('data', inputs)]))
-		end = datetime.now()
+		
+		startPreproc = datetime.now()
+		preproc = transformer.preprocess('data', inputs)
+		endPreproc = datetime.now()
+		myPreproc = (endPreproc-startPreproc).total_seconds()
+
+		preprocTime += myPreproc
+
+		startAsarray = datetime.now()
+		arrProc=np.asarray([preproc])
+		endAsarray = datetime.now()
+		myAsarray = (endAsarray-startAsarray).total_seconds()
+
+		asarrayTime += myAsarray
+
+		startFwdall = datetime.now()
+		out = net.forward_all(data=arrProc)
+		endFwdall = datetime.now()
+		myFwdall = (endFwdall-startFwdall).total_seconds()
+
+		fwdallTime += myFwdall
 
 		imagesProcessed = imagesProcessed+1
 
-		elapsedTime = (end-start).total_seconds()
-		time_spent = time_spent + elapsedTime
-		
-		avg_fps = imagesProcessed / time_spent
-		print '\nFILE: {0} Running Average: {1} FPS'.format(line, avg_fps)
+		print '\nFILE: {0} Load {1}, PreProc {2}, AsArray {3}, FwdAll {4}'.format(line, myLoad, myPreproc, myAsarray, myFwdall)
 		#print out.iteritems()
 		img_cv = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 		results = interpret_output(out['result'][0], img.shape[1], img.shape[0]) # fc27 instead of fc12 for yolo_small 
@@ -171,7 +197,13 @@ def main(argv):
 
 	overalltime = (endOverall-startOverall).total_seconds()
 
-	print 'Master FPS: {0}'.format(imagesProcessed/overalltime)
+	masterFps = imagesProcessed/overalltime
+	loadAvg = loadTime/imagesProcessed
+	preprocAvg = preprocTime/imagesProcessed
+	asarrayAvg = asarrayTime/imagesProcessed
+	fwdallAvg = fwdallTime/imagesProcessed
+
+	print 'FPS {0}, Load Avg {1}, Preproc Avg {2}, AsArr Avg {3}, FwdAll Avg {4}'.format(masterFps, loadAvg, preprocAvg, asarrayAvg, fwdallAvg)
 #	print 'Running Average: {0} FPS'.format(avg_fps)
 
 

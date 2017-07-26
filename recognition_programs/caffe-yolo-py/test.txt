@@ -1,0 +1,200 @@
+[('-m', 'prototxt/yolo_small_deploy.prototxt'), ('-w', '/home/calebt/Documents/caffe-yolo/yolo_small.caffemodel'), ('-i', 'Alleyway.txt')]
+model file is " prototxt/yolo_small_deploy.prototxt
+weight file is " /home/calebt/Documents/caffe-yolo/yolo_small.caffemodel
+image list file is " Alleyway.txt
+
+FILE: Alleyway/playlist.m3u8/37.jpg
+ Load 0.079735, PreProc 0.115514, AsArray 0.000988, FwdAll 3.202735
+    class : car , [x,y,w,h]=[64,306,395,221], Confidence = 0.47808137536
+64 306 458 526
+
+FILE: Alleyway/playlist.m3u8/2.jpg
+ Load 0.052326, PreProc 0.061175, AsArray 0.001085, FwdAll 2.73406
+    class : car , [x,y,w,h]=[66,307,393,218], Confidence = 0.465116798878
+66 307 458 525
+
+FILE: Alleyway/playlist.m3u8/7.jpg
+ Load 0.040755, PreProc 0.053265, AsArray 0.000969, FwdAll 2.532223
+    class : car , [x,y,w,h]=[63,307,397,219], Confidence = 0.48009994626
+63 307 459 525
+
+FILE: Alleyway/playlist.m3u8/31.jpg
+ Load 0.034503, PreProc 0.052236, AsArray 0.000773, FwdAll 2.574339
+    class : car , [x,y,w,h]=[66,305,393,222], Confidence = 0.468931466341
+66 305 458 527
+
+FILE: Alleyway/playlist.m3u8/4.jpg
+ Load 0.040512, PreProc 0.055941, AsArray 0.000792, FwdAll 3.114345
+    class : car , [x,y,w,h]=[64,307,395,219], Confidence = 0.480010032654
+64 307 458 525
+
+FILE: Alleyway/playlist.m3u8/11.jpg
+ Load 0.041683, PreProc 0.051731, AsArray 0.00088, FwdAll 2.88353
+    class : car , [x,y,w,h]=[63,307,396,219], Confidence = 0.485199064016
+63 307 459 525
+
+FILE: Alleyway/playlist.m3u8/10.jpg
+ Load 0.036944, PreProc 0.056913, AsArray 0.000985, FwdAll 2.725109
+    class : car , [x,y,w,h]=[63,307,397,218], Confidence = 0.483622968197
+63 307 459 525
+
+FILE: Alleyway/playlist.m3u8/32.jpg
+ Load 0.036127, PreProc 0.048837, AsArray 0.000762, FwdAll 2.54568
+    class : car , [x,y,w,h]=[65,306,394,221], Confidence = 0.47486191988
+65 306 459 526
+
+FILE: Alleyway/playlist.m3u8/22.jpg
+ Load 0.035971, PreProc 0.052731, AsArray 0.00099, FwdAll 2.562575
+    class : car , [x,y,w,h]=[64,305,394,222], Confidence = 0.473196655512
+64 305 458 527
+
+FILE: Alleyway/playlist.m3u8/15.jpg
+ Load 0.034997, PreProc 0.048734, AsArray 0.000819, FwdAll 2.671625
+    class : car , [x,y,w,h]=[63,306,396,221], Confidence = 0.483323454857
+63 306 459 526
+
+FILE: Alleyway/playlist.m3u8/38.jpg
+ Load 0.036057, PreProc 0.050397, AsArray 0.000918, FwdAll 2.658322
+    class : car , [x,y,w,h]=[64,306,396,221], Confidence = 0.476394534111
+64 306 460 526
+
+FILE: Alleyway/playlist.m3u8/26.jpg
+ Load 0.049315, PreProc 0.056294, AsArray 0.000906, FwdAll 3.174518
+    class : car , [x,y,w,h]=[63,304,395,222], Confidence = 0.479505985975
+63 304 457 526
+
+FILE: Alleyway/playlist.m3u8/36.jpg
+ Load 0.042428, PreProc 0.05779, AsArray 0.000768, FwdAll 2.589068
+    class : car , [x,y,w,h]=[64,306,395,221], Confidence = 0.480670720339
+64 306 458 526
+
+FILE: Alleyway/playlist.m3u8/24.jpg
+ Load 0.04118, PreProc 0.055174, AsArray 0.000873, FwdAll 2.649162
+    class : car , [x,y,w,h]=[63,305,395,222], Confidence = 0.472347706556
+63 305 457 527
+
+FILE: Alleyway/playlist.m3u8/25.jpg
+ Load 0.034488, PreProc 0.101349, AsArray 0.000769, FwdAll 2.603581
+    class : car , [x,y,w,h]=[63,305,395,223], Confidence = 0.474550634623
+63 305 457 527
+
+FILE: Alleyway/playlist.m3u8/29.jpg
+ Load 0.039652, PreProc 0.062556, AsArray 0.000944, FwdAll 3.06031
+    class : car , [x,y,w,h]=[66,306,392,221], Confidence = 0.466892361641
+66 306 458 526
+
+FILE: Alleyway/playlist.m3u8/35.jpg
+ Load 0.047957, PreProc 0.118165, AsArray 0.002044, FwdAll 2.942042
+    class : car , [x,y,w,h]=[65,306,395,221], Confidence = 0.478924870491
+65 306 459 526
+
+FILE: Alleyway/playlist.m3u8/33.jpg
+ Load 0.038633, PreProc 0.056567, AsArray 0.001191, FwdAll 2.757213
+    class : car , [x,y,w,h]=[65,306,395,221], Confidence = 0.476715326309
+65 306 459 526
+
+FILE: Alleyway/playlist.m3u8/34.jpg
+ Load 0.045081, PreProc 0.068686, AsArray 0.000946, FwdAll 2.704983
+    class : car , [x,y,w,h]=[64,306,395,221], Confidence = 0.477978974581
+64 306 458 526
+
+FILE: Alleyway/playlist.m3u8/17.jpg
+ Load 0.035787, PreProc 0.051637, AsArray 0.000903, FwdAll 2.537599
+    class : car , [x,y,w,h]=[64,305,396,222], Confidence = 0.477901995182
+64 305 460 527
+
+FILE: Alleyway/playlist.m3u8/1.jpg
+ Load 0.036344, PreProc 0.053274, AsArray 0.000979, FwdAll 2.813836
+    class : car , [x,y,w,h]=[65,307,396,220], Confidence = 0.468818545341
+65 307 461 527
+
+FILE: Alleyway/playlist.m3u8/6.jpg
+ Load 0.036441, PreProc 0.051332, AsArray 0.000835, FwdAll 2.646445
+    class : car , [x,y,w,h]=[63,307,397,219], Confidence = 0.484015077353
+63 307 459 525
+
+FILE: Alleyway/playlist.m3u8/12.jpg
+ Load 0.043109, PreProc 0.057153, AsArray 0.001085, FwdAll 2.595171
+    class : car , [x,y,w,h]=[64,307,395,219], Confidence = 0.483184844255
+64 307 458 525
+
+FILE: Alleyway/playlist.m3u8/3.jpg
+ Load 0.040042, PreProc 0.049499, AsArray 0.000779, FwdAll 2.757216
+    class : car , [x,y,w,h]=[66,308,393,217], Confidence = 0.474205642939
+66 308 458 524
+
+FILE: Alleyway/playlist.m3u8/9.jpg
+ Load 0.035652, PreProc 0.049797, AsArray 0.000762, FwdAll 2.61217
+    class : car , [x,y,w,h]=[63,307,397,219], Confidence = 0.484203159809
+63 307 459 525
+
+FILE: Alleyway/playlist.m3u8/23.jpg
+ Load 0.037521, PreProc 0.051913, AsArray 0.000769, FwdAll 2.778374
+    class : car , [x,y,w,h]=[64,305,395,223], Confidence = 0.471850007772
+64 305 458 527
+
+FILE: Alleyway/playlist.m3u8/13.jpg
+ Load 0.042386, PreProc 0.066425, AsArray 0.00074, FwdAll 2.902159
+    class : car , [x,y,w,h]=[64,306,395,220], Confidence = 0.483042538166
+64 306 458 526
+
+FILE: Alleyway/playlist.m3u8/5.jpg
+ Load 0.04072, PreProc 0.057223, AsArray 0.000942, FwdAll 2.754756
+    class : car , [x,y,w,h]=[62,307,398,219], Confidence = 0.485976904631
+62 307 460 525
+
+FILE: Alleyway/playlist.m3u8/39.jpg
+ Load 0.037468, PreProc 0.057471, AsArray 0.000963, FwdAll 2.89638
+    class : car , [x,y,w,h]=[65,305,395,223], Confidence = 0.470923841
+65 305 459 527
+
+FILE: Alleyway/playlist.m3u8/21.jpg
+ Load 0.050353, PreProc 0.058305, AsArray 0.000758, FwdAll 2.810799
+    class : car , [x,y,w,h]=[65,306,393,221], Confidence = 0.470288813114
+65 306 457 526
+
+FILE: Alleyway/playlist.m3u8/30.jpg
+ Load 0.044178, PreProc 0.094587, AsArray 0.001047, FwdAll 2.869787
+    class : car , [x,y,w,h]=[66,306,393,221], Confidence = 0.467876762152
+66 306 458 526
+
+FILE: Alleyway/playlist.m3u8/14.jpg
+ Load 0.03489, PreProc 0.051514, AsArray 0.000759, FwdAll 2.746118
+    class : car , [x,y,w,h]=[63,306,396,220], Confidence = 0.485933154821
+63 306 459 526
+
+FILE: Alleyway/playlist.m3u8/16.jpg
+ Load 0.035654, PreProc 0.054745, AsArray 0.000867, FwdAll 2.551525
+    class : car , [x,y,w,h]=[63,306,396,221], Confidence = 0.480740249157
+63 306 459 526
+
+FILE: Alleyway/playlist.m3u8/28.jpg
+ Load 0.045301, PreProc 0.064854, AsArray 0.000838, FwdAll 2.569289
+    class : car , [x,y,w,h]=[66,305,393,222], Confidence = 0.469081312418
+66 305 458 527
+
+FILE: Alleyway/playlist.m3u8/8.jpg
+ Load 0.042609, PreProc 0.067047, AsArray 0.000847, FwdAll 2.659816
+    class : car , [x,y,w,h]=[63,307,396,219], Confidence = 0.4793407619
+63 307 459 525
+
+FILE: Alleyway/playlist.m3u8/18.jpg
+ Load 0.053024, PreProc 0.059742, AsArray 0.000835, FwdAll 2.598203
+    class : car , [x,y,w,h]=[65,305,395,222], Confidence = 0.473018109798
+65 305 459 527
+
+FILE: Alleyway/playlist.m3u8/19.jpg
+ Load 0.069029, PreProc 0.057212, AsArray 0.001249, FwdAll 2.699894
+    class : car , [x,y,w,h]=[64,305,396,223], Confidence = 0.468449890614
+64 305 460 527
+
+FILE: Alleyway/playlist.m3u8/27.jpg
+ Load 0.035564, PreProc 0.051697, AsArray 0.000906, FwdAll 2.738021
+    class : car , [x,y,w,h]=[64,305,393,222], Confidence = 0.473764628172
+64 305 456 527
+
+FILE: Alleyway/playlist.m3u8/20.jpg
+ Load 0.035847, PreProc 0.048998, AsArray 0.000783, FwdAll 2.692537
+    class : car , [x,y,w,h]=[66,305,394,222], Confidence = 0.465994954109
+66 305 460 527
+FPS 0.350519662926, Load Avg 0.042058025641, Preproc Avg 0.0609866666667, AsArr Avg 0.000924307692308, FwdAll Avg 2.74142346154

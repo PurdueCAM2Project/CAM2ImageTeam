@@ -2,7 +2,7 @@
 
 ## Overview
 
-This week we will go implement a deep learning model on your computer, preferrably in Caffe. If you want to implement Faster-RCNN in MATLAB, I can only try to help you.
+This week we will go implement a deep learning model on your computer, preferrably in Caffe. While there are other versions available for these models, such as the original MATLAB version of Faster-RCNN, I will not be much help...
 
 We want to know how to use deep learning models, and how to use them for our specific task of identifying people.
 
@@ -17,7 +17,7 @@ If you are stuck on any of the material, please email me at gauenk@purdue.edu wi
 
 ## Tasks
 
-1. Get training started for your model. No need to converge. Please send me a screen-shot of the model training.
+1. Get training started for your model. No need to finish training. Please send me a screen-shot of the model training.
 
 2. For the PASCAL VOC 2012 training-set and the CAM2 dataset:
    - report the mAP of your model

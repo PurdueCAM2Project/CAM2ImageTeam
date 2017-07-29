@@ -17,7 +17,7 @@ If you are stuck on any of the material, please email me at gauenk@purdue.edu wi
 Answer the following questions:
 1. Give an example of a linear relationship
 2. What's an outlier? What is the relationship to likelihood estimation and outliers? What's one simple change to MLE to make it more robust?
-3. What is the Kullback-Leibler divergence and how do we minimize it?
+3. What is the Kullback-Leibler divergence and how do we minimize it? What is the relationship to this loss function and information theory?
 
 ## To Submit
 

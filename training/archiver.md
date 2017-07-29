@@ -42,7 +42,14 @@ Where the head of my_100_cameras.txt with the format `<camera id> <is video>` is
 ## MySQL
 
 - Install mysql ``` sudo apt-get install mysql-server ```
-- TODO: create username, password, and load in the cam2 db. Today is 5/13, I will try to add more details by 5/15. However, if details are not here I recommend googling! We need to import the cam2 database into mysql. Note we recommend a **blank** password.
+- Complete the following set-up for MySQL to link with the archiver.py file.
+  - [Create username and password](http://www.lanexa.net/2011/08/create-a-mysql-database-username-password-and-permissions-from-the-command-line/)
+  - Load the sql file avaliable [here](https://drive.google.com/file/d/0B2lPU4JUPMVsbDhqOVdRZ2NPams/view?usp=sharing) into MySQL. You need to request access by emailing gauenk@purdue.edu.
+
+     ```
+     mysql -u username -p database_name < file.sql
+     ```
+
 - Once mysql has a database (i.e. "cam2"), edit the "archiver.py" file to:
 
 ```
@@ -52,10 +59,9 @@ RESULTS_PATH = '<results directory>'
 # The server database credentials.
 DB_SERVER = 'localhost' #<-- probably still localhost
 DB_USER_NAME = '<username in mysql>' 
-DB_PASSWORD = '<password>' #<-- if no password leave blank
-DB_NAME = '<database name>' #<-- for example, "cam2"
+DB_PASSWORD = '<password>' #<-- if no password leave as empty string 
+DB_NAME = '<database name>' #<-- name of database in MySQL. For example, "cam2"...
 ```
-
 
 ## Python Files
 

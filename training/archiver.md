@@ -44,7 +44,7 @@ Where the head of my_100_cameras.txt with the format `<camera id> <is video>` is
 - Install mysql ``` sudo apt-get install mysql-server ```
 - Complete the following set-up for MySQL to link with the archiver.py file.
   - [Create username and password](http://www.lanexa.net/2011/08/create-a-mysql-database-username-password-and-permissions-from-the-command-line/)
-  - Load the sql file avaliable [here](https://drive.google.com/file/d/0B2lPU4JUPMVsbDhqOVdRZ2NPams/view?usp=sharing) into MySQL. You need to request access by emailing gauenk@purdue.edu.
+  - Load the sql file in MySQL. The file is avaliable by emailing gauenk@purdue.edu with a gmail account from which you can download the file. If you are on the CAM2 google drive, the file is located in CAM2\Image Team\training\cam2_small.sql.
 
      ```
      mysql -u username -p database_name < file.sql

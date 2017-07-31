@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+    The master template for the site.
+
+    Authors: Caleb Tung,
+    © 2017 The CAM² Group.
+-->
+
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    
+    <div id="middle">
+    {% include nav.html %}
+
+    <div class="wrapper" id="article-wrapper">
+      <div class="page-content" id="article-content">
+        {{ content }}
+      </div>
+    </div>
+
+    
+    </div>
+
+      {% include footer.html %}  
+
+  </body>
+
+</html>

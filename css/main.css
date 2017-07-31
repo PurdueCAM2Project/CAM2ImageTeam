@@ -1,0 +1,339 @@
+/**
+ * The master stylesheet for the site, containing rules for all templates.
+ *
+ *
+ * Authors: Caleb Tung,
+ * © 2017 The CAM² Group.
+ * 
+ * IN-ORDER ORGANIZATION OF THIS STYLESHEET:
+ * - Global Styles
+ * - Header Styles
+ * - Nav Styles
+ * - Article Styles
+ * - Markdown Styles (the styles applied to Jekyll-parsed markdown)
+ * - Footer Styles
+ * - Mobile Optimization Styles (also see mobile-nav-menu.js)
+ *
+ * CODE STYLE OF THIS STYLESHEET:
+ * * All rules are listed in alphabetical order - DO NOT VIOLATE THIS.
+ * * The units used are: rem and % for maximum versatility
+ */
+
+
+
+/***********************************/
+/********** GLOBAL STYLES **********/
+/***********************************/
+html
+{
+    max-width: 100%;
+    min-height: 100%;
+}
+
+body
+{
+    background: #252525;
+    color: #E0E0E0;
+    min-height: 100%;
+}
+
+.icon svg
+{
+    width: 15px;
+}
+
+
+/***********************************/
+/********** HEADER STYLES **********/
+/***********************************/
+header
+{
+    font-family: 'Ubuntu Light', sans-serif;
+}
+
+header a
+{
+    color: #E0E0E0;
+    text-decoration: none;
+}
+
+header a:hover
+{
+    color: #D7AA6D;
+}
+
+#site-title
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+#site-title a
+{
+    color: #D7AA6D;
+}
+
+.site-header .wrapper
+{
+    background-image: -webkit-gradient(linear, top, bottom, #252525 10%, #353535);
+    background-image: -webkit-linear-gradient(top, #252525 10%, #353535);
+    background-image: -moz-linear-gradient(top, #252525 10%, #353535);
+    background-image: linear-gradient(to bottom, #252525 10%, #353535);
+    box-shadow: 0 5px 3px #161616;
+    padding: 0 2rem 2rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.site-header .wrapper li
+{
+    display: block;
+    float: left;
+    padding-left: 1rem;
+}
+
+.site-header .wrapper ul
+{
+    float: none;
+    list-style: none;
+    margin-left: 50rem;
+    margin-top: -2rem;
+    padding-left: 0;
+}
+
+
+/********************************/
+/********** NAV STYLES **********/
+/********************************/
+#nav-wrapper
+{
+    background: #252525;
+    display: block;
+    float: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    position: relative;
+    width: 15rem;
+}
+
+#nav-content
+{
+    margin: auto;
+}
+
+#nav-content a
+{
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+#nav-content a:hover
+{
+    color: whitesmoke;
+}
+
+#nav-content ul
+{
+    list-style: none;
+    padding-left: 0;
+    padding-right: .5rem
+}
+
+#nav-content li
+{
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+    width: 13rem;
+}
+
+#nav-content li:hover, #nav-content .active li
+{
+    background: #353535;
+}
+
+
+/************************************/
+/********** ARTICLE STYLES **********/
+/************************************/
+#article-content
+{
+    margin: auto;
+    padding: 1rem;
+}
+
+#article-wrapper
+{
+    background: #1E1E1E;
+    margin-left: 15rem;
+    min-height: 35rem;
+    position: relative;
+    width: 55rem;
+}
+
+
+/*************************************/
+/********** MARKDOWN STYLES **********/
+/*************************************/
+#article-content h1, #article-content h2, #article-content h3, #article-content h4, #article-content h5, #article-content h6
+{
+    font-family: 'Ubuntu Light', sans-serif;
+}
+
+#article-content
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+#article-content a
+{
+    color: steelblue;
+}
+
+#article-content a:hover
+{
+    color: #60A0B4;
+}
+
+.highlighter-rouge /* This is for code blocks */
+{
+    background: #161616;
+    color: #E7BA7D;
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 1rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    overflow: auto;
+}
+
+code
+{
+    font-family: 'Droid Sans Mono', monospace;
+    max-width: 100%;
+}
+
+.highlight
+{
+    padding: 1rem;
+}
+
+blockquote /* This is for attention blocks (use > in markdown) */
+{
+    border-left: 2px solid steelblue;
+    margin-left: 0;
+    background: #202020;
+}
+
+blockquote p
+{
+    margin-left: .2rem;
+    padding-left: 1.6rem;
+    border-left: 2px solid #C28E0E;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+/***********************************/
+/********** FOOTER STYLES **********/
+/***********************************/
+.site-footer .wrapper
+{
+    display: block;
+    font-family: 'Ubuntu Light';
+    font-size: 0.7rem;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.footer-col
+{
+    margin: auto;
+    max-width: 55rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.site-footer ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+.site-footer a
+{
+    color: steelblue;
+}
+
+.site-footer a:hover
+{
+    color: #60A0B4;
+}
+
+
+/************************************************/
+/********** MOBILE OPTIMIZATION STYLES **********/
+/************************************************/
+.show-when-mobile
+{
+    display: none;
+}
+
+#menu-icon-clickme
+{   
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: auto;
+    padding: 0.4rem 0 0.4rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Anything less than this width is counted as a "mobile" (tablets, phones) display */
+@media screen and (max-width: 70rem) /* Change mobile-nav-menu.js if you change this */
+{
+    .show-when-mobile
+    {
+        display: block;
+    }
+
+    .site-header .wrapper ul
+    {
+        float: right;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #nav-wrapper
+    {
+        float: none;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        z-index: 3;
+    }
+
+    #nav-content li
+    {
+        padding-left: 0.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    #article-wrapper
+    {
+        margin-left: 0;
+        padding-top: 1rem;
+        width: 100%;
+    }
+}
+
+/* For extra small screens, like phones */
+@media screen and (max-width: 600px)
+{
+    .site-header .wrapper ul
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+<!--
+    The navigation menu for all the articles, either as a sidebar or a dropdown.
+
+    Authors: Caleb Tung,
+    © 2017 The CAM² Group.
+-->
+
+<div id="nav-wrapper" class="wrapper">
+    <nav id="nav-content" role="navigation" >
+        <ul>
+            {% for p in site.html_pages %}
+                <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">
+                    <li>{{ p.title }}</li>
+                </a>
+            {% endfor %}
+        </ul>
+    </nav>
+    <div class="show-when-mobile" id="menu-icon-clickme">
+        &#9776; <!-- HTML code for the menu icon -->
+    </div>
+</div>

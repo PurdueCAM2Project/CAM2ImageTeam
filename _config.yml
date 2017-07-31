@@ -1,0 +1,36 @@
+# Welcome to Jekyll!
+# 
+# This config file is meant for settings that affect the entire site; you should
+# NOT need to edit this values much.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'.
+#
+#  If you change this file while developing locally, please restart the server process.
+#
+# Authors: Caleb Tung,
+# © 2017 The CAM² Group.
+
+# Site settings
+title: Image Team Knowledge Base | Purdue University CAM² Group
+short_title: CAM² Image Team
+subtitle: Knowledge Base
+email: yunglu@purdue.edu
+description: > # this means to ignore newlines until the next thing
+  The documentation and resource center of the Purdue University CAM² Group's image processing subteam.
+legal: >
+  Copyright &copy; The CAM² Group. All rights reserved. Site theme inspired
+  by the user interface for the open-source Visual Studio Code editor and designed by Caleb Tung.
+baseurl: "/CAM2ImageTeam" # At root
+url: "https://purduecam2project.github.io/CAM2ImageTeam" # the base hostname & protocol for the site
+project_site: https://www.cam2project.net
+
+github_username: PurdueCAM2Project/CAM2ImageTeam
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+theme: jekyll-theme-cayman

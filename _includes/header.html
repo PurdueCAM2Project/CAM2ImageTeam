@@ -1,0 +1,27 @@
+<!--
+    The header for all pages.
+
+    Authors: Caleb Tung,
+    © 2017 The CAM² Group.
+-->
+
+<header class="site-header">
+    <div class="wrapper">
+        <h1 id="site-title"><a href="{{ site.baseurl }}">{{ site.short_title }}</a></h1>
+        <h2>{{ site.subtitle }}</h2>
+        
+        <ul>
+        {% if site.github_username %}
+        <li>
+            {% include icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.project_site %}
+        <li>
+            {% include icon-website.html %}
+        </li>
+        {% endif %}
+        </ul>
+    </div>
+</header>

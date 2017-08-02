@@ -1,9 +1,9 @@
 ---
 layout: kbase_article
-title: Setting up your environment
+title: Getting started
 ---
 
-# Setting up your environment
+# Getting started
 The CAM² research group relies on a variety of libraries and tools to facilitate research and development. As a new member of the Image Team, you'll want to run through the setup in this guide to get up and running on your personal computer.
 
 ---
@@ -35,12 +35,13 @@ The [Open Source Computer Vision Library](http://opencv.org/) powers a lot of th
 
 2. Enable execution of the shell script on your machine:
 
-```
-cd "the directory where the script is located"
-chmod +755 install_opencv_3.1.0.sh
-```
+    ```
+    cd "the directory where the script is located"
+    chmod +755 install_opencv_3.1.0.sh
+    ```
 
 3. Run the script:
+
     ```
     bash -i install_opencv_3.1.0.sh
     ```
